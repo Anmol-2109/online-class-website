@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Online classes</title>
+    <style>
+        #head11
+        {
+            background-color: rgb(11, 146, 199);
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .header2
+        {
+            background-color: rgb(11, 146, 199);
+            display: flex;
+            padding:1%;
+            flex-wrap: wrap;
+        }
+        #head11 p
+        {
+            margin-left: 10%;
+        }
+        #head11 input
+        {
+             margin-left: 50%;
+             margin-top:10px;
+             margin-bottom: 10px;
+             border:solid gray;
+             background-color: rgb(11, 146, 199);
+        }
+        #head2
+        {
+            display: flex;
+            flex-direction:column;
+            margin-left: 10%;
+        }
+        
+        #head2 h2
+        {
+            margin-top: 0.5%;
+            margin-left: 0%;
+            margin-bottom: 0%;
+            font-size :3vw;
+            color: grey;
+        }
+        #search
+        {
+                padding-right: 5%;
+            padding-left: 25%;
+        }
+        #search input
+        {
+            /* margin-left: 80%; */
+            /* align-self: flex-end; */
+            padding-left: 10%;
+            padding-top: 0.5%;
+            margin-top: 10%;
+            /* margin-right: 25%; */
+            padding-bottom: 0.5%;
+        }
+        #search input:focus
+        {
+            background-color: rgb(129, 195, 125);
+        }
+        #slide
+        {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+        }
+        #head2 p{
+            /* margin-left:10%; */
+            margin-bottom: 0%;
+            margin-top: 0%;
+            font-size: 1vw ;
+            /* width:40% */
+            /* width: 1vw; */
+        }
+        .header a{
+            text-decoration: none;
+            /* background-color: rgb(223, 14, 21); */
+        }
+        .header a:link,.header2 a:visited{
+              /* background-color: hotpink; */
+              padding:5px 16px;
+              color:black;
+        }
+        .header a:hover
+        {
+            /* background-color: rgb(52, 5, 129); */
+            color: white;
+        }
+        .header3main
+        {
+           display:flex;
+           flex-direction: column;
+           /* overflow-y:scroll; */
+           /* flex-wrap: wrap; */
+           background-image:url("WhatsApp Image 2025-01-11 at 04.04.48_83d987a7.jpg");
+           /* background-image:url("WhatsApp Image 2025-01-11 at 03.55.10_84d42ffa.jpg"); */
+           background-repeat: no-repeat;
+           background-size: 100%;
+
+           /* image-rendering: ; */
+           /* margin-bottom: 50px; */
+        }
+        .header3
+        {
+           padding: 3%;
+            display: flex;
+            /* margin-right:; */
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* justify-content: space-between; */
+            /* overflow-x: scroll; */
+            /* width:80%; */
+            text-align: center;
+            padding-left: 15%;
+            padding-right: 10%;
+        }
+        .header3 div
+        {
+            /* background-color: aqua; */
+            /* margin-top:60%; */
+            margin-right: 0%;
+            padding:0.5%;
+        }
+        #header31
+        {
+            /* margin-left: 10%; */
+            background-color: rgb(112, 106, 155);
+            color: white;
+        }
+        #header32
+        {
+            background-color: rgb(111, 166, 176);
+            color:white
+        }
+        #header33
+        {
+            background-color: rgb(85, 142, 112);
+            color:white
+        }
+        #header34
+        {
+            background-color: rgb(212, 119, 145);
+            color:white
+        }
+        .About
+        {
+            text-align: center  ;
+            /* background-color: brown; */
+            margin-top: 2%;
+
+
+        }
+        .About h1
+        {
+            padding-top: 3%;
+            font-size: 50px;
+            color: rgb(77, 77, 77);
+            margin-bottom: 0%;
+        }
+        .About p
+        {
+            padding-left: 15%;
+            padding-right: 15%;
+            text-align: center;
+            color: grey;
+            font-size: 20px;
+            /* height: 10px; */
+        }
+        .About a:link,.About a:visited
+        {
+            color:rgb(78, 187, 230);
+            font-size: 20px;
+            text-align: center;
+        }
+        .About a:hover
+        {
+            color:black
+
+        }
+        .cource
+        {
+            text-align: center  ;
+            background-color:rgb(241, 241, 241);
+            margin-top: 5%;
+
+        }
+        .cource h1
+        {
+            padding-top: 3%;
+            font-size: 50px;
+            color: rgb(77, 77, 77);
+            margin-bottom: 0%;
+        }
+        .cource p
+        {
+            padding-left: 15%;
+            padding-right: 15%;
+            text-align: center;
+            color: grey;
+            font-size: 20px;
+            /* height: 10px; */
+        }
+        .cource a:link,.cource a:visited
+        {
+            color:rgb(78, 187, 230);
+            font-size: 20px;
+            text-align: center;
+        }
+        .cource a:hover
+        {
+            color:black
+
+        }
+        .About1
+        {
+            margin-top: 5%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 18%;
+            margin-right:18%;
+            /* justify-content: space-between; */
+            margin-bottom:10px;
+        }
+        .About1 div
+        {
+            border: 0.5px  grey;
+            border-style:outset;
+            padding-top:2%;
+            padding-bottom: 1%;
+            /* width:25%; */
+            padding-left: 2%;
+            margin:2%;
+            padding-right: 2%;
+        }
+        #ab1
+        {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        #ab2
+        {
+            padding-left:5%;
+            padding-right: 5%;
+        }
+        #ab3
+        {
+            padding-left:6%;
+            padding-right: 6%;
+        }
+        #ab4
+        {
+            padding-left: 1%;
+            padding-right: 1%;
+        }
+        .About1 div h2
+        {
+             color:rgb(23, 160, 214);
+             margin-bottom: 0%;
+            text-align:center;
+            font-size: 30PX;
+        }
+        .About1 div p
+        {
+            /* margin-top: 0%; */
+            font: weight 400px;;
+            font-size: 15PX;
+            text-align: center;
+            color: rgb(105, 104, 104);
+        }
+        #cource1
+        {
+            display:flex;
+            flex-direction: row;
+            margin-top:2%;
+            margin-left: 10%;
+            flex-wrap: wrap;
+            margin-right:20%
+        
+        }
+        #cource1 div{
+            background-color:rgb(8, 112, 154);
+            
+            border:1vw solid grey;
+            margin-right: 2%;
+            padding:8%;
+            font-size: 5vw;
+        
+            /* width:20%; */
+            /* height: 255px; */
+            margin-top: 3%;
+        }
+        
+        
+        #cource1 div:hover
+        {
+             background-color: brown;
+             
+        }
+    #tablea
+    {
+       margin-left:15%;
+       margin-right:15% ;
+       overflow-x:scroll;
+    }
+    #table td
+    {
+        border:3px solid rgb(1, 57, 42);
+        padding:1%;
+    }
+    #tab1:hover
+    {
+        background-color: rgb(29, 180, 23);
+    } 
+    #table
+    {
+        /* background-image:url("WhatsApp Image 2025-01-11 at 04.04.48_83d987a7.jpg"); */
+        margin-top: 5%;
+        /* margin-left: 20%;
+        margin-right: 20%; */
+        font-size: 30px;;
+        text-align: center;
+        color:rgb(1, 57, 42);
+        border:3px solid rgb(1, 57, 42);
+        border-collapse: collapse;
+       
+        /* width:100%; */
+    }
+    #table tr:hover
+    {
+        background-color: rgb(0, 103, 132);
+    } 
+    #table tr
+    {
+        background-color: rgb(207, 122, 179);
+        border:3px solid rgb(0, 77, 57);
+    }
+    #tab1:hover
+    {
+        background-color:rgb(29, 180, 23) ;
+    }
+    #table  th
+    {
+        background-color: rgb(109, 0, 73);
+        border:3px solid rgb(0, 77, 57);
+        color:white;
+    }
+    #table a
+    {
+        font-size: 30px;
+        color:rgb(68, 0, 81);
+        text-align: center;
+    }
+    #table a:hover
+    {
+        color: grey;
+    }
+    .join
+    {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         padding-top: 5%;
+         /* margin-left: 5%;
+         margin-right: 5%; */
+         margin-top: 2%;
+         padding: 15%;
+         padding: 15%;
+         /* justify-content: space-between; */
+         background-color: rgb(237, 236, 236);
+    }
+    .join div
+    {
+        /* width:30%; */
+        margin-right: 2%;
+        text-align: center;
+    }
+    .join a
+    {
+          text-align: center;
+          font-size: 22px;
+          font-weight: 600;
+          color: rgb(45, 45, 45);
+    }
+    .join h3
+    {
+        text-align: center;
+        color: rgb(200, 200, 200);
+        font-weight: 800;
+    }
+    .join p
+    {
+        color: grey;
+    }
+    .join a:hover
+    {
+        color: rgb(0, 126, 176);
+    }
+    #headerup
+    {
+        /* background-color: brown; */
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    #headerup1
+    {
+        /* background-color: rgb(228, 14, 14); */
+        margin-top: 10%;
+        margin-bottom: 15%;
+        margin-left: 5%;
+        margin-right: 40%;
+        padding:5%;
+        BORDER:2PX solid grey
+    }
+    #headerup1 a
+    {
+        text-decoration: none;
+        background-color: rgb(0, 99, 137);
+        padding:1%;
+        font-size: 15px;
+        margin-top: 15%;
+    }
+    #headerup1 a:link,#headerup1 a:visited
+    {
+        color: grey;
+        font-size: 25px;;
+        margin-top: 2%;
+    }
+    #headerup1 a:hover
+    {
+        color: blueviolet;
+        background-color: rgb(13, 210, 40);
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header1">
+             <div id="head11">
+                <p>📞7631648529</p>
+                <input type="button" value="quick links">
+             </div>
+             <div id="slide">
+             <div id="head2">
+                <div><h2>Anmol singh classes</h2></div>
+                <div><p>Learn programming in simplest way as possible</p></div>
+             </div>
+                <div id="search"><input type="search" name="search" placeholder="search"></div>
+             </div>
+            </div>
+       <div class="header2">
+           <div><a href="p1.html">Home</a></div>
+           <div><a href="aboutp1.html">About us</a></div> 
+           <div><a href="">Media</a></div> 
+           <div><a href="coursep1.html">cource</a></div>
+           <div><a href="batchesp1.html">Batch details</a></div>
+           <div><a href="contactp1.html">contact us</a></div>
+       </div>
+    </div>
+         <div class="header3main">
+            <div id="headerup">
+                <div id="headerup1">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus eos fuga, <br> eaque esse in aliquid ratione repudiandae laboriosam quis <br> architecto.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis amet sequi <br> et inventore atque, pariatur accusamus alias maxime <br> asperiores fugiat.
+                     <br><br><a href="">Learn more</a>
+                </div>
+        <div class="header3">
+                <div id="header31">
+                    <h2> How to join online <br> live class </h2>
+                  Lorem ipsum dolor, <br> Ullam consectetur <br> perspiciatis eius, minima unde <br> tempore impedit <br> harum debitis sed cum fugiat <br> consequatur explicabo aliquid <br>perferendis <br> quae, vero vel! Cum accusamus pariatur <br> atque aliquid soluta maxime, <br> laborum doloribus <br>laboriosam praesentium consequatur!                  
+                </div>
+                <div id="header32">
+                    <h2> Popular carrier guidance <br> by MysirG </h2>
+                    Lorem ipsum dolor, <br> Ullam consectetur <br> perspiciatis eius, minima unde <br> tempore impedit <br> harum debitis sed cum fugiat <br> consequatur explicabo aliquid <br>perferendis <br> quae, vero vel! Cum accusamus pariatur <br> atque aliquid soluta maxime, <br> laborum doloribus <br>laboriosam praesentium consequatur!
+                  </div>
+                <div id="header33">
+                    <h2 >Carrer option and how <br> to approach them </h2>
+                    Lorem ipsum dolor, <br> Ullam consectetur <br> perspiciatis eius, minima unde <br> tempore impedit <br> harum debitis sed cum fugiat <br> consequatur explicabo aliquid <br>perferendis <br> quae, vero vel! Cum accusamus pariatur <br> atque aliquid soluta maxime, <br> laborum doloribus <br>laboriosam praesentium consequatur!
+                </div>
+                <div id="header34">
+                    <h2> Popular tech <br> talks </h2>
+                    Lorem ipsum dolor, <br> Ullam consectetur <br> perspiciatis eius, minima unde <br> tempore impedit <br> harum debitis sed cum fugiat <br> consequatur explicabo aliquid <br>perferendis <br> quae, vero vel! Cum accusamus pariatur <br> atque aliquid soluta maxime, <br> laborum doloribus <br>laboriosam praesentium consequatur!
+            
+                </div>
+            </div>
+             </div>
+         </div>
+             <div class="About">
+                    <h1>About us</h1>
+                   <p>  amet consectetur adipisicing elit. Impedit, deleniti.Lorem ipsum dolor sit amet consectetur adipisicing </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, </p>
+                    <p> Lorem ipsum dolor sit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quae!</p>
+                   <a href="">(more....)</a>
+             </div>
+             <div class="About1">
+                     <div id="ab1"><h2>8500000</h2><p>You tube subscribers</p></div>
+                     <div id="ab2"><h2>2000</h2><p>Online videos</p></div>
+                     <div id="ab3"><h2>25</h2><p>Cource</p></div>
+                     <div id="ab4"><h2>20</h2><p>Teaching experience (in years)</p></div>
+             </div>
+             <div class="cource">
+                <h1>Courses</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, placeat, consequuntur maxime quaerat quasi earum ex iste odio vel illo autem quo, at quae eligendi labore corrupti itaque reprehenderit voluptatem atque. Minus itaque laudantium, architecto sit exercitationem soluta quas facere fugiat. Eum amet, ab itaque architecto dolor accusamus nisi modi! </p>
+                
+               <a href="">(more....)</a>
+             
+         <div id="cource1">
+            <div>C</div>
+            <div>C++</div>
+            <div>Java</div>
+         </div>
+             </div>
+         <div class="About">
+            <h1>Batch Details</h1>
+            <p>  amet consectetur adipisicing elit. Impedit, deleniti.Lorem ipsum dolor sit amet consectetur adipisicing </p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, </p>
+             <p> Lorem ipsum dolor sit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quae!</p>
+         </div>
+             <div id="tablea">
+             <table id="table">
+            <tr>
+                <th>S.no.</th>
+                <th>Course</th>
+                <th>Start Date/Time/Days</th>
+                <th>Mode</th>
+                <th>Admission</th>
+            </tr>
+             <tr id="tab1">
+                <td>1</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>3</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>4</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>5</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>6</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>7</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>8</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>9</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>10</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>11</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Batch Details</a></td>
+             </tr>
+             <tr>
+                <td>12</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Admission open</a></td>
+             </tr>
+             <tr>
+                <td>13</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Admission open</a></td>
+             </tr>
+             <tr>
+                <td>14</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Admission open</a></td>
+             </tr>
+             <tr>
+                <td>15</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Admission open</a></td>
+             </tr>
+             <tr>
+                <td>16</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Admission open</a></td>
+             </tr>
+             <tr>
+                <td>17</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Admission open</a></td>
+             </tr>
+             <tr>
+                <td>18</td>
+                <td>UCF-C,C++,DSA and STL Batch 5.0</td>
+                <td>27 jan 20257|7:30 pm|Mon-Wed-Fri</td>
+                <td>Online live</td>
+                <td><a href="">Admission open</a></td>
+             </tr>
+         </table>
+            </div>
+         
+         <div class="About">
+            <h1>Why Choose us</h1>
+           <p>  amet consectetur adipisicing  elit. Impedit, deleniti.  Lorem ipsum dolor sit amet  consectetur adipisicing </p>
+            <p>Lorem ipsum dolor sit amet  consectetur adipisicing elit .Lorem ipsum dolor sit amet  consectetur, adipisicing elit.  Inventore, </p>
+            <p> Lorem ipsum dolor sit.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quae!</p>
+           <a href="">(more....)</a>
+     </div>
+     <div class="join">
+        <div><a href="">We make learning <br> simple</a><h3>_____</h3>
+              <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing <br> Maxime possimus voluptatibus <br> quis nobis vel <br> ab natus. Tenetur magnam <br> in consectetur?</p>
+        </div>
+        <div><a href="">Learn by doing <br> programming problems</a><h3>_____</h3>
+             <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Adipisci, autem?</p>
+        </div>
+        <div><a href="">Free video support <br> for backup and revision</a><h3>_____</h3>
+            <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Natus, aperiam.</p>
+        </div>
+        <div><a href="">Course certificates</a><h3>_____</h3>
+        <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Velit, <br> est officiis quo ratione officia <br> minima ipsum dolores illum <br> expedita explicabo?</p>
+        </div>
+     </div>
+     <br><br><br><br>
+        
+    </div>
+</body>
+</html>
