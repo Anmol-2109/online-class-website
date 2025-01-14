@@ -208,6 +208,17 @@
             font-size: 20px;
             /* height: 10px; */
         }
+        
+        @media(max-width:768px)
+        {
+            .header3
+            {
+                flex-direction: column;
+                /* b        ackground-color: blue; */
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+        }
         .cource a:link,.cource a:visited
         {
             color:rgb(78, 187, 230);
@@ -230,6 +241,12 @@
             /* justify-content: space-between; */
             margin-bottom:10px;
         }
+        @media(max-width:720px)
+        {
+            .About1{
+                flex-direction:column ;
+            }
+        }
         .About1 div
         {
             border: 0.5px  grey;
@@ -243,21 +260,25 @@
         }
         #ab1
         {
+            flex-grow:1;
             padding-left: 5%;
             padding-right: 5%;
         }
         #ab2
         {
+            flex-grow: 1;
             padding-left:5%;
             padding-right: 5%;
         }
         #ab3
         {
+            flex-grow: 1;
             padding-left:6%;
             padding-right: 6%;
         }
         #ab4
         {
+            flex-grow: 1;
             padding-left: 1%;
             padding-right: 1%;
         }
@@ -285,6 +306,13 @@
             flex-wrap: wrap;
             margin-right:20%
         
+        }
+        @media(max-width:720px)
+        {
+            #cource1
+            {
+                flex-direction:column;
+            }
         }
         #cource1 div{
             background-color:rgb(8, 112, 154);
@@ -377,6 +405,13 @@
          /* justify-content: space-between; */
          background-color: rgb(237, 236, 236);
     }
+    @media(max-width:720px)
+        {
+            .join
+            {
+                flex-direction:column;
+            }
+        }
     .join div
     {
         /* width:30%; */
